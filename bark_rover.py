@@ -5,18 +5,18 @@ import datetime
 import board
 import neopixel
 import pygame
-from hx711 import HX711
 import random
+from hx711 import HX711
 
 #global variables
-reference_unit = -1814
-trigger_distance = 50
-pill_taken = False
-clock_in = 6
-clock_out = 16
-snooze_time = 900
-light_threshold = 5000
-weight_threshold = 13.5
+reference_unit = -1814	#Scale Calibration
+trigger_distance = 50	#Distance to trigger rover in cm
+pill_taken = False	#Flag to mark if pill was taken that day
+clock_in = 6		#Rover's work start time
+clock_out = 16		#Rover's work end time
+snooze_time = 900	#Length of snooze
+light_threshold = 5000	#Threshold to detect laser
+weight_threshold = 13.5	#Threshold of pill low supply in grams
 
 #GPIO setup
 GPIO_TRIGGER = 18
