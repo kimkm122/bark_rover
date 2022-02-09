@@ -14,7 +14,7 @@ trigger_distance = 50
 pill_taken = False
 clock_in = 6
 clock_out = 16
-snooze_time = 5
+snooze_time = 900
 light_threshold = 5000
 weight_threshold = 13.5
 
